@@ -12,17 +12,10 @@
     <string name="recording_finished_title">Recording finished</string>
     <string name="recording_finished_text">Screen recording complete</string>
     <string name="notifications_channel">Recording notifications</string>
-    <string name="local_service_connected">Service connected</string>
-    <string name="local_service_disconnected">Service disconnected</string>
-    <string name="local_service_started">Service started</string>
-    <string name="local_service_stopped">Service stopped</string>
-    <string name="local_service_label">Service label</string>
     <string name="error_storage_select_folder">Error: Select recordings folder</string>
     <string name="error_microphone_required">Error: Allow recording microphone</string>
     <string name="error_invalid_folder">Error: Invalid recordings folder</string>
     <string name="error_recorder_failed">Error: Recording failed</string>
     <string name="setting_recordings_folder">Change recordings folder</string>
-    <string name="setting_audio_record_title">Record sound</string>
-    <string name="setting_audio_record_microphone">Microphone</string>
     <string name="setting_audio_record_microphone_sound">Record microphone</string>
 </resources>
