@@ -1,0 +1,3 @@
+ * Metadata and unsigned build for F-Droid
+
+ * Ukrainian translation by K0tyk

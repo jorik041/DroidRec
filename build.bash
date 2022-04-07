@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 RUNDIR="$PWD"
 
 dirprefix=""
@@ -43,6 +45,11 @@ zip -j -u "$RUNDIR/res.apk" "$RUNDIR/classes.dex"
 rm "$RUNDIR/classes.dex"
 "$dirprefix"zipalign 4 "$RUNDIR/res.apk" "$RUNDIR/out-aligned.apk"
 rm "$RUNDIR/res.apk"
+
+if [ ! -f "$RUNDIR/signature.keystore" ]; then
+  echo "Unsigned build complete."
+  exit
+fi
 
 echo "Signing application."
 "$dirprefix"apksigner sign --ks "$RUNDIR/signature.keystore" --out "$RUNDIR/app-build.apk" "$RUNDIR/out-aligned.apk"

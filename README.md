@@ -1,6 +1,6 @@
 ![DroidRec Icon](https://raw.githubusercontent.com/yakovlevegor/DroidRec/main/app_icon_big.png "App Icon")
 
-![DroidRec Screenshot](https://raw.githubusercontent.com/yakovlevegor/DroidRec/main/screenshot.jpg "App Screenshot")
+![DroidRec Screenshot](metadata/en-US/images/phoneScreenshots/1.jpg "App Screenshot")
 
 ## About
 DroidRec is an open-source Android screen recorder.

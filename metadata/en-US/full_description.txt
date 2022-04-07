@@ -1,0 +1,1 @@
+It can not record your system sounds, because Android does not have such functionality. However, it can record your microphone.

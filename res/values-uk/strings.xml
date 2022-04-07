@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DroidRec</string>
+    <string name="record_start">Розпочати запис</string>
+    <string name="record_stop">Завершити запис</string>
+    <string name="record_pause">Призупинити запис</string>
+    <string name="record_resume">Продовжити запис</string>
+    <string name="recording_started_title">Запис екрана</string>
+    <string name="recording_started_text">Екран записується</string>
+    <string name="recording_paused_title">Запис призупинено</string>
+    <string name="recording_paused_text">Екран не записується</string>
+    <string name="recording_finished_title">Запис завершено</string>
+    <string name="recording_finished_text">Відео збережено</string>
+    <string name="notifications_channel">Сповіщення про запис</string>
+    <string name="notifications_stop">Завершити</string>
+    <string name="notifications_pause">Призупинити</string>
+    <string name="notifications_resume">Продовжити</string>
+    <string name="error_storage_select_folder">Помилка: оберіть каталог записів</string>
+    <string name="error_microphone_required">Помилка: дозвольте записувати мікрофон</string>
+    <string name="error_invalid_folder">Помилка: хибний каталог записів</string>
+    <string name="error_recorder_failed">Помилка: не вдалося записати</string>
+    <string name="setting_recordings_folder">Змінити каталог записів</string>
+    <string name="setting_audio_record_microphone_sound">Записати мікрофон</string>
+</resources>

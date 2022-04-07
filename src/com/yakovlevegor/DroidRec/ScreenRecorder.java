@@ -307,7 +307,7 @@ public class ScreenRecorder extends Service {
 
         PendingIntent stopRecordActionIntent = PendingIntent.getService(this, 0, stopRecordIntent, 0);
 
-        Notification.Action.Builder stopRecordAction = new Notification.Action.Builder(stopIcon, "Stop", stopRecordActionIntent);
+        Notification.Action.Builder stopRecordAction = new Notification.Action.Builder(stopIcon, getString(R.string.notifications_stop), stopRecordActionIntent);
 
 
         Icon pauseIcon = Icon.createWithResource(this, R.drawable.icon_pause_color_action);
@@ -318,7 +318,7 @@ public class ScreenRecorder extends Service {
 
         PendingIntent pauseRecordActionIntent = PendingIntent.getService(this, 0, pauseRecordIntent, 0);
 
-        Notification.Action.Builder pauseRecordAction = new Notification.Action.Builder(pauseIcon, "Pause", pauseRecordActionIntent);
+        Notification.Action.Builder pauseRecordAction = new Notification.Action.Builder(pauseIcon, getString(R.string.notifications_pause), pauseRecordActionIntent);
 
         Notification.Builder notification = new Notification.Builder(this, NOTIFICATIONS_RECORDING_CHANNEL)
             .setContentTitle(getString(R.string.recording_started_title))
@@ -410,7 +410,7 @@ public class ScreenRecorder extends Service {
 
         PendingIntent stopRecordActionIntent = PendingIntent.getService(this, 0, stopRecordIntent, 0);
 
-        Notification.Action.Builder stopRecordAction = new Notification.Action.Builder(stopIcon, "Stop", stopRecordActionIntent);
+        Notification.Action.Builder stopRecordAction = new Notification.Action.Builder(stopIcon, getString(R.string.notifications_stop), stopRecordActionIntent);
 
         Icon continueIcon = Icon.createWithResource(this, R.drawable.icon_record_continue_color_action);
         
@@ -420,7 +420,7 @@ public class ScreenRecorder extends Service {
 
         PendingIntent continueRecordActionIntent = PendingIntent.getService(this, 0, continueRecordIntent, 0);
 
-        Notification.Action.Builder continueRecordAction = new Notification.Action.Builder(continueIcon, "Continue", continueRecordActionIntent);
+        Notification.Action.Builder continueRecordAction = new Notification.Action.Builder(continueIcon, getString(R.string.notifications_resume), continueRecordActionIntent);
 
         Notification.Builder notification = new Notification.Builder(this, NOTIFICATIONS_RECORDING_CHANNEL)
             .setContentTitle(getString(R.string.recording_paused_title))    
@@ -457,7 +457,7 @@ public class ScreenRecorder extends Service {
 
         PendingIntent stopRecordActionIntent = PendingIntent.getService(this, 0, stopRecordIntent, 0);
 
-        Notification.Action.Builder stopRecordAction = new Notification.Action.Builder(stopIcon, "Stop", stopRecordActionIntent);
+        Notification.Action.Builder stopRecordAction = new Notification.Action.Builder(stopIcon, getString(R.string.notifications_stop), stopRecordActionIntent);
 
 
         Icon pauseIcon = Icon.createWithResource(this, R.drawable.icon_pause_color_action);
@@ -468,7 +468,7 @@ public class ScreenRecorder extends Service {
 
         PendingIntent pauseRecordActionIntent = PendingIntent.getService(this, 0, pauseRecordIntent, 0);
 
-        Notification.Action.Builder pauseRecordAction = new Notification.Action.Builder(pauseIcon, "Pause", pauseRecordActionIntent);
+        Notification.Action.Builder pauseRecordAction = new Notification.Action.Builder(pauseIcon, getString(R.string.notifications_pause), pauseRecordActionIntent);
 
         Notification.Builder notification = new Notification.Builder(this, NOTIFICATIONS_RECORDING_CHANNEL)
             .setContentTitle(getString(R.string.recording_started_title))
