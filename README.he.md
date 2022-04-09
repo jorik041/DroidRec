@@ -11,7 +11,14 @@
 [רכש היישום](https://github.com/yakovlevegor/DroidRec/releases)
 
 ## בנוה
-ברא מפתח `keytool -genkeypair -keystore mykey.keystore -validity 365000 -keysize 4096 -keyalg RSA` ושים בשם `signature.keystore`.
+ברא מפתח
+
+`keytool -genkeypair -keystore mykey.keystore -validity 365000 -keysize 4096 -keyalg RSA`
+
+ושים בשם
+
+`signature.keystore`.
+
 (**עיון**: היי אחד נוסח מג'אווה)
 
 בנוה היישום פתח **build.bash** וטענות:
