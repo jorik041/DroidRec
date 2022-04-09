@@ -1,27 +1,26 @@
-![DroidRec Icon](https://raw.githubusercontent.com/yakovlevegor/DroidRec/main/app_icon_big.png "App Icon")
+![DroidRec תמונה](https://raw.githubusercontent.com/yakovlevegor/DroidRec/main/app_icon_big.png "תמונה מיישום")
 
-![DroidRec Screenshot](metadata/en-US/images/phoneScreenshots/1.jpg "App Screenshot")
+![DroidRec צילם](metadata/he/images/phoneScreenshots/1.jpg "צילם מיישום")
 
-English | [עברית](https://github.com/yakovlevegor/DroidRec/blob/main/README.he.md)
+[English](https://github.com/yakovlevegor/DroidRec/blob/main/README.md) | עברית
 
-## About
-DroidRec is an open-source Android screen recorder.
+## סביב
+זכר אנדרואיד.
+לא זכר קולים אבל זכר בטוי.
 
-It can **not** record your system sounds, because Android doesn't have such functionality. However, it can record your microphone.
+[רכש היישום](https://github.com/yakovlevegor/DroidRec/releases)
 
-[Download app build](https://github.com/yakovlevegor/DroidRec/releases)
+## בנוה
+ברא מפתח `keytool -genkeypair -keystore mykey.keystore -validity 365000 -keysize 4096 -keyalg RSA` ושים בשם `signature.keystore`.
+(**עיון**: היי אחד נוסח מג'אווה)
 
-## Building
-Generate your keystore with `keytool -genkeypair -keystore mykey.keystore -validity 365000 -keysize 4096 -keyalg RSA` and place it in this folder under `signature.keystore` name.
-(**Note**: Run keytool with the same or older Java version on which you are going to build the application)
+בנוה היישום פתח **build.bash** וטענות:
+א. נתיב אל אנדראיד "platforms/android-*version*"
+ב. (*לא חשוב*) אלו אין תוכנות בבנוה מאנדראיד שקע הנתיב "build-tools/*version*"
 
-To build this app, run **build.bash** with arguments:
-1. Path to your Android SDK "platforms/android-*version*"
-2. (*Optional*) If you don't have Android SDK build tools installed on your system, specify path to your Android SDK "build-tools/*version*"
+למשל: `./build.bash path/to/android/sdk/platforms/android-28 path/to/android/sdk/build-tools/28.0.0`
 
-Example: `./build.bash path/to/android/sdk/platforms/android-28 path/to/android/sdk/build-tools/28.0.0`
-
-## License
+## התעודה
 
 #### The Unlicense
 ```
