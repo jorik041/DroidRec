@@ -17,12 +17,15 @@
 בנוה היישום פתח **build.bash** וטענות:
 
 א. נתיב אל אנדראיד
+
 "platforms/android-*version*"
 
 ב. (*לא חשוב*) אלו אין תוכנות בבנוה מאנדראיד שקע הנתיב
+
 "build-tools/*version*"
 
 למשל:
+
 `./build.bash path/to/android/sdk/platforms/android-28 path/to/android/sdk/build-tools/28.0.0`
 
 ## התעודה
