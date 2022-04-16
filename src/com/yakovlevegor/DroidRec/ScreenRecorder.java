@@ -286,7 +286,7 @@ public class ScreenRecorder extends Service {
         
         recordingMediaProjection = recordingMediaProjectionManager.getMediaProjection(result, data);
     
-        recordingVirtualDisplay = recordingMediaProjection.createVirtualDisplay("DroidRec", metrics.widthPixels, metrics.widthPixels, metrics.densityDpi, DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, recordingMediaRecorder.getSurface(), null, null);
+        recordingVirtualDisplay = recordingMediaProjection.createVirtualDisplay("DroidRec", metrics.widthPixels, metrics.heightPixels, metrics.densityDpi, DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, recordingMediaRecorder.getSurface(), null, null);
         
         try {
             recordingMediaRecorder.start();
